@@ -49,6 +49,9 @@ project "freetype"
     "src/winfonts/winfnt.c",
     }
 
+    defines { "FT2_BUILD_LIBRARY" }
+
+
     includedirs {
         "include",
         "src",
