@@ -6,7 +6,7 @@ project "freetype"
     targetdir ("%{wks.location}/bin/" .. outputdir .. "/%{prj.name}")
     objdir ("%{wks.location}/bin-int/" .. outputdir .. "/%{prj.name}")
 
-    files { "src/**.c" }
+    files { "src/**.c", "src/**.h", "include/**.h" }
     includedirs {
         "include",
         "src",
